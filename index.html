@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website.peralta</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="icon" href="https://github.com/Janjancel/icon/blob/main/T10.LOGO.png?raw=true" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h3>.<span>J</span>ancel</h3>
+        <nav>
+            <ul>
+                <li><a href="#home-section">Home</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#service-section">Service</a></li>
+                <li><a href="#project-section">Project</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home-section"  class="section">
+            <p><span>hello there, welcome to my site</span></p>
+            <p>I'm <span>Jancel C. Peralta</span></p>
+            <p>A BSIT Student</p>
+            <p>& Programmer</p>
+            <button><a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FJanjancel%2Ficon%2Fmain%2Fcv.docx&wdOrigin=BROWSELINK" download target="_blank">download cv</a></button>
+        </section>
+
+
+
+        <!-- about-section--------------------------------------->
+        <section id="about-section" class="section">
+            <h2>About <span>.Me</span></h2>
+            <div id="image-container">
+                <img src="https://avatars.githubusercontent.com/u/128217434?s=400&u=bacef9b0f130a1f3b70d2594a46db02834110cf7&v=4" alt="">
+            </div>
+            <div id="paragraph-container">
+                <pre> I'm <span>Jancel Peralta</span>, 
+a <span>second-year college student</span> pursuing a 
+    <span>Bachelor of Science in Information Technology (BSIT)</span>.
+        My passion for technology and innovation drives 
+me to <span>explore the ever-evolving world of IT</span>, where I 
+        aim to make a significant impact through
+    my <span>skills and knowledge</span>. 
+                </pre>
+            </div>
+            <div id="t-container">
+                <div id="tab-container">
+                    <ul class="tabs">
+                        <li><p onclick="openTab('education')">Education</p></li>
+                        <li><p onclick="openTab('skills')">Skills</p></li>
+                        <!-- <li><p onclick="openTab('experience')">Experience</p></li> -->
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- The tab content -->
+            <div class="tab-content">
+
+                <div id="education" class="tab-pane">
+                    <div class="educ-container">
+                        <h3>Elementary</h3>
+                        <label for="elementary" id="elementary">
+                            <img src="school/ies.jpg" alt="" class="school">
+                            <p>Year Graduated: 2015</p>
+                            <address>Imelda, San Juan, Batangas, Phil</address>
+                        </label>
+                    </div>
+                    <div class="educ-container">
+                        <h3>High School</h3>
+                        <label for="high-school" id="high-school">
+                            <img src="school/lnhs.jpg" alt="" class="school">
+                            <p>Year Graduated: 2021</p>
+                            <address>Laiya, San Juan, Batangas, Phil</address>
+                        </label>
+                    </div>
+                    <div class="educ-container">
+                        <h3>Tertiary</h3>
+                        <label for="tertiary" id="high-school">
+                            <img src="school/dll.jpg" alt="" class="school">
+                            <p>Current</p>
+                            <address>Isabang, Lucena City, Phil</address>
+                        </label>
+                    </div>
+                </div>
+
+                <div id="skills" class="tab-pane">
+                    <div class="skills">
+                        <div class="box">
+                            <h4 class="language"><b>Python</b></h4>
+                            <div class="percent">
+                                <div style="width: 50%;"></div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h4 class="language"><b>HTML</b></h4>
+                            <div class="percent">
+                                <div style="width: 15%;"></div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h4 class="language"><b>CSS</b></h4>
+                            <div class="percent">
+                                <div style="width: 15%;"></div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h4 class="language"><b>Javascript</b></h4>
+                            <div class="percent">
+                                <div style="width: 1%;"></div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h4 class="language"><b>Cooking</b></h4>
+                            <div class="percent">
+                                <div style="width: 75%;"></div> 
+                            </div>
+                        </div>  
+                    </div>        
+                </div>
+                <!-- <div id="experience" class="tab-pane">
+                <h2>Experience</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div> -->
+                
+            </div>
+        
+        </section>
+
+
+         <!-- service-section--------------------------------------->
+        <section id="service-section"  class="section">
+            <div id="service-top">
+                <h2>what <span>i</span> do</h2>
+                <p>I specialize in designing and programming, with a focus on developing and enhancing non-profit websites to improve their online presence and functionality.</p>
+
+            </div>
+            <div id="service-bottom">
+                <article>
+                    <div class="top">
+                        <h1>non-profit website design</h1>
+                    </div>
+                    <div class="bottom">
+                        <span><img src="service/web.png" alt=""></span>
+                        <p>I design and develop user-friendly, impactful websites that help non-profit organizations effectively communicate their mission and reach their goals.</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="top">
+                        <h1>graphic design</h1>
+                    </div>
+                    <div class="bottom">
+                        <span><img src="service/graphic-design.png" alt=""></span>
+                        <p>I create visually compelling and strategically designed graphics that enhance brand identity and engage target audiences.</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="top">
+                        <h1>copywriting</h1>
+                    </div>
+                    <div class="bottom">
+                        <span><img src="service/copywriting.png" alt=""></span>
+                        <p>I craft persuasive and engaging copy that communicates key messages, resonates with audiences, and drives action.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+         <!-- project-section--------------------------------------->
+        <section id="project-section"  class="section">
+            <div id="project-top">
+                <h2><span>.my</span> projects</h2>
+            </div>
+            <div id="project-bottom">
+                <article>
+                    <label for="">
+                        <img src="projects/calcu.png" alt="">
+                        <div>
+                            <p>Calculator</p>
+                            <button><a href="">view on github</a></button>
+                        </div>
+                    </label>
+                </article>
+                <article>
+                    <label for="">
+                        <img src="projects/socmed.png" alt="">
+                        <div>
+                            <p>Social Media Manager</p>
+                            <button><a href="">view on github</a></button>
+                        </div>
+                    </label>
+                </article>
+                <article>
+                    <label for="">
+                        <img src="projects/quote.png" alt="" id="quote">
+                        <div>
+                            <p>Quote Generator</p>
+                            <button><a href="">view on github</a></button>
+                        </div>
+                    </label>
+                </article>
+                <article>
+                    <label for="">
+                        <img src="projects/game.png" alt="" id="game">
+                        <div>
+                            <p>Rock Paper Scissor Game</p>
+                            <button><a href="">view on github</a></button>
+                        </div>
+                    </label>
+                </article>
+            </div>
+
+        </section>
+
+
+         <!-- contact-section--------------------------------------->
+        <section id="contact-section"  class="section">
+            <div id="contact-top">
+                <h2>contact <span>.me</span></h2>
+            </div>
+            <div id="contact-bottom">
+                <article id="form-container">
+                    <form action="submit" method="mailto">
+                        <input type="text" placeholder="Name" id="name">
+                        <!-- <input type="email" name="email" id="email" placeholder="Email"> -->
+                        <input type="text" id="subject" placeholder="subject">
+                        <textarea name="Message" id="message" cols="100" rows="10" placeholder="Your Message"></textarea>
+                        <input type="button" value="Send Message" id="send-message-btn" onclick="loadEvents()">
+                         
+                    </form>
+                </article>
+                <div id="socmed-container">
+                    <h3>or <span>via</span></h3>
+                    <a href=""><img src="https://github.com/Janjancel/icon/blob/main/fb.png?raw=true" alt="" class="social"></a>
+                    <a href=""><img src="https://github.com/Janjancel/icon/blob/main/X.png?raw=true" alt="" class="social"></a>
+                    <a href=""><img src="https://github.com/Janjancel/icon/blob/main/email.png?raw=true" alt="" class="social"></a>
+                    <a href=""><img src="https://github.com/Janjancel/icon/blob/main/gitHub.png?raw=true" alt="" class="social"></a>
+                    <a href=""><img src="https://github.com/Janjancel/icon/blob/main/instagram.png?raw=true" alt="" class="social"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+            <h6>created by: Jancel C. Peralta</h6>
+            2024
+    </footer>
+
+
+</body>
+</html>
