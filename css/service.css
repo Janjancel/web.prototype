@@ -10,10 +10,6 @@
     padding: 50px;
 }
 
-#service-top p {
-    font-family: roboto;
-}
-
 #service-bottom {
     justify-content: center;
     /* background-color: #fca311; */
@@ -23,11 +19,12 @@
 }
 
 #service-bottom article {
-    background-color: #ffffff;
+    background-color: #e5e5e5;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     width: 400px;
-    height: 500px;
+    height: 400px;
     margin: 10px;
+    border-radius: 20px;
 }
 
 #service-bottom article .top {
@@ -36,6 +33,7 @@
 
 #service-bottom .top {
     height: 70px;
+    border-radius: 20px 20px 0 0;
     background-color:#fca311;
 }
 
