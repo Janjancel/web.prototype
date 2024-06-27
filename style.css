@@ -57,6 +57,10 @@ header {
     /* left: 0; */
 }
 
+.icon {
+    display: none;
+}
+
 header li{
     list-style: none;
     justify-self: right;
@@ -71,7 +75,7 @@ header ul {
     display: flex;
     gap: 20px;
     /* justify-content: right; */
-    margin-right: 50px;
+    /* margin-right: 50px; */
 }
 
 header h3 span {
@@ -133,4 +137,5 @@ footer h6 {
     section {
         height: 100vh;
     }
+
 }
