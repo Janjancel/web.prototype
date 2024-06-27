@@ -18,12 +18,13 @@
     <header>
         <h3>.<span>J</span>ancel</h3>
         <nav>
-            <ul>
+            <ul class="navbar">
                 <li><a href="#home-section">Home</a></li>
                 <li><a href="#about-section">About</a></li>
                 <li><a href="#service-section">Service</a></li>
                 <li><a href="#project-section">Project</a></li>
                 <li><a href="#contact-section">Contact</a></li>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">☰</a>
             </ul>
         </nav>
     </header>
@@ -181,7 +182,7 @@ me to <span>explore the ever-evolving world of IT</span>, where I
                 <h2><span>.my</span> projects</h2>
             </div>
             <div id="project-bottom">
-                <article>
+                <article class="mySlides">
                     <label for="">
                         <img src="projects/calcu.png" alt="" id="calcu">
                         <div>
@@ -190,7 +191,7 @@ me to <span>explore the ever-evolving world of IT</span>, where I
                         </div>
                     </label>
                 </article>
-                <article>
+                <article class="mySlides">
                     <label for="">
                         <img src="projects/socmed.png" alt="" id="socmed">
                         <div>
@@ -199,7 +200,7 @@ me to <span>explore the ever-evolving world of IT</span>, where I
                         </div>
                     </label>
                 </article>
-                <article id="random-quote-container">
+                <article class="mySlides" id="random-quote-container">
                     <label for="">
                         <img src="projects/quote.png" alt="" id="quote">
                         <div>
@@ -208,7 +209,7 @@ me to <span>explore the ever-evolving world of IT</span>, where I
                         </div>
                     </label>
                 </article>
-                <article>
+                <article class="mySlides">
                     <label for="">
                         <img src="projects/game.png" alt="" id="game">
                         <div>
@@ -217,6 +218,11 @@ me to <span>explore the ever-evolving world of IT</span>, where I
                         </div>
                     </label>
                 </article>
+                <div>
+                    <button id="display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button id="display-right" onclick="plusDivs(+1)">&#10095;</button>
+                </div>
+                
             </div>
 
         </section>
