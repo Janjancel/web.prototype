@@ -34,6 +34,7 @@
     border-radius: 20px;
     background-color: #e5e5e5;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
 }
 
 article img{
@@ -50,14 +51,31 @@ article #quote {
 article label div{
     align-items: center;
     justify-content: center;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+    /* padding-top: 25px; */
     height: 120px;
     background-color: #fca311;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 0 0  20px 20px;
 }
-#project-bottom #display-left,
+
+article label div p {
+    margin-bottom: 10px;
+}
+
+#project-bottom article div {
+    display: flex;
+    flex-direction: column;
+}
+
+#project-bottom article div button a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: 300;
+    font-size: 8px;
+}
+
+/* #project-bottom #display-left,
 #project-bottom #display-right {
     color: #14213d;
     font-size: large;
@@ -67,6 +85,20 @@ article label div{
 #project-bottom #display-right:hover {
     color: #fca311;
 
+} */
+
+#project-button {
+    display:flex;
+}
+
+#project-bottom #display-left,
+#project-bottom #display-right {
+    height: 70px;
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 70px;
+    width: 50px;
 }
 
 
@@ -90,15 +122,6 @@ article label div{
         margin-top: 0;
     }
 
-    #project-bottom #display-left,
-    #project-bottom #display-right {
-        height: 70px;
-        width: 50px;
-        margin-left: 10px;
-        margin-right: 10px;
-        height: 70px;
-        width: 50px;
-}
 
 
     /* #calcu { grid-area: calcu; }
