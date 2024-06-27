@@ -13,11 +13,6 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-#paragraph-container pre {
-    color: #000000;
-    font-family: roboto;
-}
-
 #paragraph-container pre span:nth-child(1) {
     font-family: poppins;
     font-size: x-large;
@@ -114,7 +109,6 @@ display: block;
 
 address {
     color: #6c757d;
-    font-family: roboto;
     font-weight: 400;
 }
 
