@@ -83,7 +83,7 @@
 
 @media only screen and (max-width: 480px) {
     #service-section {
-        height: 110vh;
+        height: 130vh;
     }
     #service-bottom article .top {
         height: 50px;
