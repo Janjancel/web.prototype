@@ -1,134 +1,117 @@
-#contact-section {
-    height: 90vh;
-    align-items: center;
-    justify-content: center;
-}
+@import url(@fortawesome/free-solid-svg-icons);
 
-#contact-top {
-    /* background-color: aqua; */
-    padding: 50px;
-}
-
-
-#contact-bottom {
-    /* background-color: black; */
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-}
-#form-container {
-    background-color: #ffffff;
-    justify-self: center;
-    align-self: center;
-    justify-content: center;
-    display: flex;
-    padding: 20px;
-    width: 650px;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+#service-top {
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     background: rgba(255,255,255,0.1);
     -webkit-backdrop-filter: blur(1px);
     backdrop-filter: blur(1px);
-    border: 1px solid rgba(255,255,255,0.05);
+    border: 1px solid rgba(255, 255, 255, 0.05); */
+    /* margin-top: 40px; */
+    padding: 50px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    width: 600px;
-
+#service-top p {
+    font-family: roboto;
 }
 
-form input::placeholder,
-textarea::placeholder{
-    color: #14213d;
-}
-
-#send-message-btn {
-    margin-top: 20px;
-    background-color: #fca311;
-    border: solid 0.5px;
-    height: 30px;
-    font-weight: 700;
-}
-
-#socmed-container {
-    justify-content: space-evenly;
-    margin-top: 50px;
+#service-bottom {
+    justify-content: center;
     /* background-color: #fca311; */
-    height: 100px;
+    display: flex;
+    height: 83vh;
+    padding-top: 10px;
+}
+
+#service-bottom article {
+    background-color: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    height: 500px;
+    margin: 10px;
+}
+
+#service-bottom article .top {
+    position: relative;
+}
+
+#service-bottom .top {
+    height: 70px;
+    background-color:#fca311;
+}
+
+#service-bottom .top h1 {
+    color: #14213d;
+    padding-top: 2.5vh;
+    text-transform: capitalize;
+    font-family: roboto;
+    font-weight: 500;
+    font-size: larger;
+}
+#service-bottom .bottom {
     padding: 20px;
 }
 
-#socmed-container h3 span {
-    text-transform: uppercase;
-    color: #fca311;
+#service-bottom .bottom span{
+    font-size: 100px;
+    color: #14213d;
 
 }
 
-#socmed-container h3 {
-    margin-bottom: 50px;
-}
-
-#socmed-container a img {
-    height: 50%;
-    margin: 0 50px;
+#service-bottom .bottom span img {
+    height: 100px;
 }
 
 
-@media only screen and (max-width: 1000px) {
-    
-    #form-container {
-        width: 450px;
+/* @media only screen and (max-width: 780px){
+    #service-section {
+        height: 150vh;
     }
-    form{
-        width: 400px;
+    #service-bottom {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
     }
-}
+
+    #service-bottom article {
+        width: 500px;
+        height: 1000px;
+    }
+} */
+
+
 
 
 @media only screen and (max-width: 480px) {
-    form {
-        width: 300px;
+    #service-section {
+        height: 110vh;
     }
-    
-    form input {
-        height: 20px;
-    }
-
-    #form-container {
-        width: 350px;
-    }
-    #socmed-container {
-        width: 100%;
+    #service-bottom article .top {
+        height: 50px;
     }
 
-    #socmed-container a img {
-        height: 40%;
-        margin: 0 20px;
+    #service-bottom {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
     }
-}
 
-@media only screen and (max-width: 400px) {
-    form {
+    #service-bottom article {
         width: 200px;
+        height: 50vh;
+    }
+    #service-bottom .bottom {
+        padding: 10px;
+    }
+
+    #service-bottom .bottom span {
+        font-size: 50px;
+    }
+    #service-bottom .bottom p {
+        font-size: 7px;
     }
     
-    form input {
-        height: 20px;
-    }
-
-    #form-container {
-        width: 250px;
-    }
-    #socmed-container {
-        width: 100%;
-    }
-
-    #socmed-container a img {
-        height: 40%;
-        margin: 0 10px;
-    }
 }
