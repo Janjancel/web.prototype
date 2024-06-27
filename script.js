@@ -9,16 +9,24 @@
     document.getElementById(tabName).classList.add('active');
     }
 
-//to send a message
 
-function loadEvents() {
-    var mailString;
-    function updateMailString() {
-        mailString = '?subject=' + encodeURIComponent($('#subject').val())
-            + '&body=' + encodeURIComponent($('#message').val());
-        $('#send-message-btn').attr('href',  'mailto:peraltajancel@gmail.com' + mailString);
-    }
-    $( "#subject" ).focusout(function() { updateMailString(); });
-    $( "#message" ).focusout(function() { updateMailString(); });
-    updateMailString();
+
+
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
 }
