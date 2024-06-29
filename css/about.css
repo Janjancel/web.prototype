@@ -30,11 +30,16 @@
     padding: 0;
     display: flex;
     /* border: #333 solid 0.5px; */
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     text-align: center;
     justify-content: center;
     align-items: center;
     }
+.wrapper {
+    background-color: #fff;
+    height: 100%;
+}
+
 #t-container {
     display: flex;
     text-align: center;
@@ -172,7 +177,7 @@ address {
 
 @media only screen and (max-width: 480px) {
     #about-section {
-        height: 150vh;
+        height: 135vh;
     }
     #paragraph-container pre span:nth-child(1) {
         font-size: small;
