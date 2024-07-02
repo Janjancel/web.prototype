@@ -75,6 +75,7 @@ textarea::placeholder{
 #socmed-container a img {
     height: 50%;
     margin: 0 50px;
+        z-index: -1;
 }
 
 
